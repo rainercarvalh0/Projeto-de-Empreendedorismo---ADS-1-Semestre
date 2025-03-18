@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto Estilo 4 Patas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .menu {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+
+        .menu a {
+            margin-left: 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .conteudo {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            padding: 50px;
+            width: 50%;
+        }
+        .rodape {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">Projeto Estilo 4 Patas</div>
+    <div class="menu">
+        <a href="#">Home</a>
+        <a href="#">Sobre</a>
+        <a href="#">Doe Aqui</a>
+        <a href="#">Contato</a>
+    </div>
+    <div class="conteudo">
+        <h1>Bem-vindo ao Projeto Estilo 4 Patas</h1>
+        <p>Nosso objetivo é ajudar cães em situação de abandono, oferecendo acolhimento e suporte para encontrar um lar amoroso.</p>
+    </div>
+    <footer class="rodape">
+        <p>&copy; 2025 Projeto Estilo 4 Patas. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
