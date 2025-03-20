@@ -12,9 +12,14 @@
             font-family: Arial, sans-serif;
         }
         body {
+            margin: 0;
+            padding: 0;
+        }
+        .container {
             display: flex;
-            flex-direction: column;
-            min-height: 100vh;
+            align-items: center;
+            height: 100vh;
+            padding: 4cm 0;
         }
         .logo {
             position: absolute;
@@ -36,38 +41,78 @@
             font-size: 18px;
         }
         .conteudo {
-            flex: 1;
+            flex;
             display: flex;
             align-items: center;
-            padding: 50px;
+            padding: 4 cm 0;
+           
+        }
+        .imagem-fundo {
             width: 50%;
+            height: 100%;
+            display: block;
+            margin: 100px auto;
+        }
+        .imagem {
+            margin-left: 0;
+            height: auto;
+    
+        }
+        .texto {
+            background-color: #c68c53;
+            width: 40%;
+            color: black;
+            padding: 20px;
+            text-align: justify;
+            font-size: 18px;
+            flex-direction: column;
+            align-items: center;
+            display: flex;
+        }
+        .botao-doe {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            font-size: 18px;
+            background-color: #f5f5dc;
+            color: black;
+            border: 2px solid black;
+            border-radius: 25px;
+            cursor: pointer;
+            font-weight: bold;
+            text-align: center;
+        }
+        .botao-doe:hover {
+            background-color: #e0d5b9;
+        
         }
         .rodape {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: fixed;
+            position: absolute;
             bottom: 0;
             width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #b0afaf;
         }
     </style>
 </head>
 <body>
-    <div class="logo">Projeto Estilo 4 Patas</div>
+        <div class="logo">Projeto Estilo 4 Patas</div>
     <div class="menu">
         <a href="#">Home</a>
         <a href="#">Sobre</a>
-        <a href="#">Doe Aqui</a>
         <a href="#">Contato</a>
     </div>
     <div class="conteudo">
-        <h1>Bem-vindo ao Projeto Estilo 4 Patas</h1>
-        <p>Nosso objetivo é ajudar cães em situação de abandono, oferecendo acolhimento e suporte para encontrar um lar amoroso.</p>
+    <img class="imagem-fundo" src="./imagens/cachorro2.jpg" alt="imagem de fundo" style="float: left;">
+    <div class="texto">
+        <p>Nós do Projeto Estilo 4 Patas, conecamos cães e gatos resgatados a pessoas dispostas a oferecer um lar cheio de amor. Não temos um abrigo, mas ajudamos animais em situação de abandono a encotrarem familias resposaveis por meio de lares temporários e adoções conscientes</p>
+        <p><strong>Ao adotar, você muda uma vida - e a sua tambem. Entre em contato e conheça os peludos que aguardam por um lar e nos ajude a manter esse projeto vivo.
+</strong></p>
+   <button class="botao-doe">Doe Aqui</button>
     </div>
     <footer class="rodape">
         <p>&copy; 2025 Projeto Estilo 4 Patas. Todos os direitos reservados.</p>
     </footer>
-
 </body>
 </html>
