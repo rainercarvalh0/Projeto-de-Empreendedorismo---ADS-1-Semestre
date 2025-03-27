@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Aqui - Projeto Estilo 4 Patas</title>
+    <style>
+        body {
+            background-color: #f8c471; /* Laranja suave */
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            background-color: #d68910;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .doacao {
+            padding: 50px;
+        }
+
+        .chave-pix {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: white;
+            padding: 10px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+        }
+
+        .qr-code {
+            margin: 20px 0;
+        }
+
+        .mensagem {
+            font-size: 18px;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="doacao">
+        <h1>Ajude o Projeto Estilo 4 Patas!</h1>
+        <p class="mensagem">Sua doação faz toda a diferença na vida dos nossos cães e gatos resgatados. Com sua ajuda, podemos oferecer alimentação, cuidados veterinários e encontrar um lar amoroso para cada pet.</p>
+        
+        <h2>Doe via PIX</h2>
+        <p class="chave-pix" onclick="copiarPix()">Chave PIX: <strong id="pix">doacao@estilo4patas.com.br</strong></p>
+
+        <h2>Ou escaneie o QR Code</h2>
+        <div class="qr-code">
+            <img src="qrcode_pix.png" alt="QR Code para doação via PIX" width="250">
+        </div>
+
+        <p class="mensagem">Após a doação, se desejar um recibo ou mais informações, entre em contato pelo nosso WhatsApp: <strong>(11) 99999-9999</strong>.</p>
+    </section>
+    <script>
+        function copiarPix() {
+            let chavePix = document.getElementById("pix").innerText;
+            navigator.clipboard.writeText(chavePix).then(() => {
+                alert("Chave PIX copiada!");
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
