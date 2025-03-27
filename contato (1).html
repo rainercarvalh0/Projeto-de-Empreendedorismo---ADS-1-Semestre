@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Projeto Estilo 4 Patas</title>
+    <style>
+        body {
+            background-color: #f8c471; /* Laranja suave */
+            color: black;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 10px;
+            background-color: #d68910; /* Tom mais escuro de laranja */
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        .redes-sociais a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+        }
+
+        .mapa {
+            margin: 20px auto;
+            width: 80%;
+            padding: 0 50px;
+        }
+
+        form {
+            background-color: white;
+            padding: 20px;
+            max-width: 400px;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            text-align: left;
+        }
+
+        form label {
+            font-weight: bold;
+            display: block;
+            margin-top: 10px;
+        }
+
+        form input, form textarea {
+            width: 385px;
+            display: flex;
+            padding: 8px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        form button {
+            background-color: #d68910;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 404px;
+            margin-top: 10px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        form button:hover {
+            background-color: #b9770e;
+        }
+        input{
+            padding: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+        <h2>Envie uma Mensagem</h2>
+        <form action="https://formsubmit.co/seuemail@gmail.com" method="POST">
+            <input type="hidden" name="_next" value="https://seusite.com/obrigado.html">
+            <input type="hidden" name="_captcha" value="false">
+        
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="message" rows="4" required></textarea>
+        
+            <button type="submit">Enviar</button>
+        </form>
+    </nav>
+        <!-- Mapa incorporado do Google Maps -->
+        <iframe 
+            class="mapa"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.022098112708!2d-46.63330948444834!3d-23.59732446877814!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5a3a1f48d8c7%3A0x3f1b8a1f3e64b8b2!2sAv.%20Paulista%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1618350475111!5m2!1spt-BR!2sbr"
+            width="600" height="400" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+        <section class="contato">
+            <h1>Fale Conosco</h1>
+            <p><strong>Telefone:</strong> (11) 99999-9999</p>
+            <p><strong>Email:</strong> contato@estilo4patas.com.br</p>
+    
+            <h2>Redes Sociais</h2>
+            <div class="redes-sociais">
+                <a href="https://facebook.com" target="_blank">Facebook</a> |
+                <a href="https://instagram.com" target="_blank">Instagram</a> |
+            </div>
+    
+            <h2>Nosso Endereço</h2>
+            <p>Rua dos Animais Felizes, 123 - São Paulo, SP</p>
+    </section>
+
+</body>
+</html>
