@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doe Aqui - Projeto Estilo 4 Patas</title>
+    <style>
+        body {
+            background-color: #fdf3e7;
+            color: #333;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 15px;
+            background-color: #d68910;
+            margin: 0;
+            border-bottom: 3px solid #b9770e;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 25px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #f0b37f;
+        }
+
+        .doacao {
+            padding: 40px 20px;
+            max-width: 700px;
+            margin: 0 auto;
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+        }
+
+        h1, h2 {
+            color: #d68910;
+        }
+
+        .chave-pix {
+            font-size: 20px;
+            font-weight: bold;
+            background-color: #fafafa;
+            padding: 12px;
+            border-radius: 8px;
+            display: inline-block;
+            margin: 20px 0;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: background-color 0.3s ease;
+        }
+
+        .chave-pix:hover {
+            background-color: #f5f5f5;
+        }
+
+        .qr-code img {
+            width: 250px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .qr-code img:hover {
+            transform: scale(1.05);
+        }
+
+        .mensagem {
+            font-size: 18px;
+            color: #140303;
+            max-width: 600px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <section class="doacao">
+        <h1>Ajude o Projeto Estilo 4 Patas!</h1>
+        <p class="mensagem">Sua doação faz toda a diferença na vida dos nossos cães  resgatados. Com sua ajuda, podemos oferecer alimentação, cuidados veterinários e encontrar um lar amoroso para cada pet.</p>
+        
+        <h2>Doe via PIX</h2>
+        <p class="chave-pix" onclick="copiarPix()">Chave PIX: <strong id="pix">doacao@estilo4patas.com.br</strong></p>
+
+        <h2>Ou escaneie o QR Code</h2>
+        <div class="qr-code">
+            <img src="qrcode_pix_estilo4patas.png" alt="QR Code para doação via PIX">
+        </div>
+
+        <p class="mensagem">Após a doação, se desejar um recibo ou mais informações, entre em contato pelo nosso WhatsApp: <strong>(11) 99999-9999</strong>.</p>
+    </section>
+
+    <script>
+        function copiarPix() {
+            let chavePix = document.getElementById("pix").innerText;
+            navigator.clipboard.writeText(chavePix).then(() => {
+                alert("Chave PIX copiada!");
+            }).catch(err => {
+                console.error("Erro ao copiar: ", err);
+            });
+        }
+    </script>
+</body>
+</html>
