@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body{
+  
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --orange: #ff7c37;
+    --degrade-bnt: linear-gradient(#fe9611,#ff5c00);
+}
+
+.container{
+ background-color: #fe9611;
+max-width: 1440px;
+padding: 0 5%;
+margin: 0 auto;
+}
+
+section{
+    padding: 2.7rem 0;
+}
+
+.btn-gradient{
+padding: 10px 25px;
+color: white;
+border-radius: 15px;
+cursor: pointer;
+background-image: var(--degrade-bnt);
+border-color: transparent;
+}
+.logo{
+    align-items: center;
+    width: 30px;
+    height: 20px;
+}
+
+.logo a img{
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+}
+nav{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 20px 0;
+}
+
+.ul{
+display: flex;
+align-items: center;
+justify-content: none;
+
+}
+.ul li{
+margin: 0 35px;
+font-size: 15px;
+}
+
+
+.ul li a {
+    color: white;
+}
+
+.img logo {
+    width: 150px;
+    height: 150px;
+    align-items: center;
+    border-radius: 50px;
+    border: orange;
+}
+
+/* main */
+
+main .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.main-text{
+    width: 50%;
+    color: white;
+}
+
+.main-text h1{
+    font-size: 4.5rem;
+}
+
+.main-text div{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.main-img{
+    width: 50%;
+}
+.main-img img{
+    width: 100%;
+}
+
+/* resultados */
+ .resultado{
+    background-color: burlywood;
+ }
+
+ .resultado .container{
+    color:  white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: burlywood;
+ }
+
+ .resultado .resultado-text{
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    width: 50%;
+ }
+ .resultado .resultado-numero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+ }
+
+ .resultado .resultado-numero p{
+    text-align: center;
+    margin: 0 30px;
+    font-size: 20px;
+ }
+
+ .resultado .resultado-numero p span{
+    font-size: 30px;
+    font-weight: 600;
+ }
+
+.diferencias .container{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+}
+
+.diferencias .card{
+    width: 60px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
